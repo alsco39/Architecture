@@ -1,0 +1,3 @@
+rootProject.name = 'hexagonal-architecture'
+include 'hexagonal-application'
+include 'hexagonal-infrastructure'
