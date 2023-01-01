@@ -32,6 +32,16 @@ dependencies {
     //configuration
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 
+    //jwt
+    implementation 'com.nimbusds:nimbus-jose-jwt:9.23'
+
+    //security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    // test
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+
     //multi module
     implementation(project(":hexagonal-application"))
 }
