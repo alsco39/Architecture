@@ -1,6 +1,17 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${URL}
-    username: ${USERNAME}
-    password: ${PASSWORD}
+    url: jdbc:mysql://localhost:3306/architecture?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: hkokim0309
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+jwt:
+  secret: 7Zel7IKs6rOg64Kg7JWE7YKk7YWN7LKY7Ja066C164ukLi4=
+  access-exp: 8640
+  refresh-exp: 86400
